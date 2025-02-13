@@ -29,3 +29,23 @@ link : https://www.kaggle.com/datasets/xhlulu/140k-real-and-fake-faces
 ```bash
 git clone https://github.com/tahangz/Hybrid-Xception-Vision-Transformer-Deepfake-Detection.git
 cd Hybrid-Xception-Vision-Transformer-Deepfake-Detection
+````
+## Install dependencies
+
+```bash
+pip install tensorflow opencv-python mtcnn pandas tqdm
+```
+## Download the pre-trained model
+Download deepfake_detector.keras and place it in the model folder.
+
+## Usage
+# Image Detection
+````python
+from keras.models import load_model
+from utils import predict_image  
+
+model = load_model('model/deepfake_detector.keras')
+result = predict_image("test_image.jpg")  # Replace with your image path
+print(f"Prediction: {result}")  # Output: "Fake" or "Real"
+````
+
