@@ -39,7 +39,7 @@ pip install tensorflow opencv-python mtcnn pandas tqdm
 Download deepfake_detector.keras and place it in the model folder.
 
 ## Usage
-# Image Detection
+### Image Detection
 ````python
 from keras.models import load_model
 from utils import predict_image  
