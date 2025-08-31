@@ -43,7 +43,9 @@ Download deepfake_detector.keras and place it in the model folder.
 ````python
 from keras.models import load_model
 from utils import predict_image  
+````
 
+This is the first version of the code
 model = load_model('model/deepfake_detector.keras')
 result = predict_image("test_image.jpg")  # Replace with your image path
 print(f"Prediction: {result}")  # Output: "Fake" or "Real"
